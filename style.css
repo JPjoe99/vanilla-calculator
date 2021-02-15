@@ -1,7 +1,15 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+}
+
+.row {
+    height: 16vh;
+}
+
 .col-3 {
     border: 1px solid black;
     padding: 0px;
-    height: 100px;
 }
 
 .btn-primary {
@@ -9,6 +17,12 @@
 }
 
 .calculator-output {
-    height: 100px;
+    height: 20vh;
     background-color: grey;
+    font-size: 80px;
+    color: white;
+}
+
+.calc-grid {
+    height: 80vh;
 }

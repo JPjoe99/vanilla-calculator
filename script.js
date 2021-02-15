@@ -35,7 +35,7 @@ function clearDisplay() {
 }
 
 function updateDisplay(update) {
-    calculatorDisplay.firstElementChild.textContent = update;
+    calculatorDisplay.textContent = update;
 }
 
 function calculateSum() {
