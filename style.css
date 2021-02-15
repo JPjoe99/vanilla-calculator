@@ -1,0 +1,14 @@
+.col-3 {
+    border: 1px solid black;
+    padding: 0px;
+    height: 100px;
+}
+
+.btn-primary {
+    border-radius: 0;
+}
+
+.calculator-output {
+    height: 100px;
+    background-color: grey;
+}
