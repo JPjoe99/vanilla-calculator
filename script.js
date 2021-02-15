@@ -35,6 +35,7 @@ function clearDisplay() {
 }
 
 function updateDisplay(update) {
+    console.log("Here");
     calculatorDisplay.textContent = update;
 }
 
