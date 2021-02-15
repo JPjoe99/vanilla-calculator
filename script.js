@@ -25,6 +25,7 @@ function removeLast() {
 }
 
 function addToSum(e) {
+    console.log("Here");
     sum += e.target.textContent;
     updateDisplay(sum);
 }
