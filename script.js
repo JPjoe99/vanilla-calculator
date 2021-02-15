@@ -25,7 +25,6 @@ function removeLast() {
 }
 
 function addToSum(e) {
-    console.log("Here");
     sum += e.target.textContent;
     updateDisplay(sum);
 }
@@ -36,12 +35,11 @@ function clearDisplay() {
 }
 
 function updateDisplay(update) {
-    console.log("Here");
     calculatorDisplay.textContent = update;
 }
 
 function calculateSum() {
     let value = eval(sum);
-    sum = "";
+    sum = value;
     updateDisplay(value);
 }
