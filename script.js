@@ -50,7 +50,7 @@ function checkoutputSize(output) {
     let displayWidth = calculatorDisplay.clientWidth - fontSize;
     var width = (outputElement.clientWidth);
     if (width > displayWidth) {
-        fontSize = fontSize - 3;
+        fontSize = fontSize - 5;
         outputElement.style.fontSize = `${fontSize}px`;
         outputElement.textContent = output;
     }
