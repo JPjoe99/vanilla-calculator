@@ -4,7 +4,7 @@ let numbersFromGrid = document.querySelectorAll("#num");
 let operatorsFromGrid = document.querySelectorAll("#operator");
 let equalButton = document.querySelector("#equal");
 let delButton = document.querySelector("#del");
-
+let fontSize = 80;
 let sum ="";
 
 for (let i = 0; i < numbersFromGrid.length; i++) {
@@ -35,11 +35,23 @@ function clearDisplay() {
 }
 
 function updateDisplay(update) {
-    calculatorDisplay.textContent = update;
+    checkoutputSize(update);
+    calculatorDisplay.firstElementChild.textContent = update;
 }
 
 function calculateSum() {
     let value = eval(sum);
     sum = value;
     updateDisplay(value);
+}
+
+function checkoutputSize(output) {
+    let outputElement = document.getElementById("output");
+    let displayWidth = calculatorDisplay.clientWidth - fontSize;
+    var width = (outputElement.clientWidth);
+    if (width > displayWidth) {
+        fontSize = fontSize - 3;
+        outputElement.style.fontSize = `${fontSize}px`;
+        outputElement.textContent = output;
+    }
 }

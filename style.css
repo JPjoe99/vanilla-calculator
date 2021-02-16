@@ -22,6 +22,7 @@ html, body {
 
 .calculator-output {
     height: 20vh;
+    width: auto;
     background-color: grey;
     font-size: 80px;
     color: white;
@@ -29,4 +30,11 @@ html, body {
 
 .calc-grid {
     height: 80vh;
+}
+
+#output {
+    position: absolute;
+    width: auto;
+    margin: 0;
+    font-size: 80px;
 }
