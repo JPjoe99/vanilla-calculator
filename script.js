@@ -42,6 +42,8 @@ function updateDisplay(update) {
 function calculateSum() {
     let value = eval(sum);
     sum = value;
+    let outputElement = document.getElementById("output");
+    outputElement.style.fontSize = "80px";
     updateDisplay(value);
 }
 
